@@ -39,7 +39,7 @@ export default function Login() {
   }
 
   return (
-    <form>
+    <form className="FORM">
       <img src={Image} alt="abcd"  />
       <input
         id="user"

@@ -14,12 +14,16 @@ const CategoriesSlicer = createSlice({
     data: [],
     selectedCategorie: -1,
   },
-  reducers: {},
+  reducers: {
+    modifier : (state,action)=>{
+      state.selectedCategorie = action.payload
+  }
+  },
   extraReducers: (builder) => {
     builder.addCase(getCategories.fulfilled, (state, action) => {
       state.data = action.payload;
     });
   },
 });
-export const {} = CategoriesSlicer.actions;
+export const {modifier} = CategoriesSlicer.actions;
 export default CategoriesSlicer.reducer;
