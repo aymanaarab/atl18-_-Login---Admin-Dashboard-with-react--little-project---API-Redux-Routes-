@@ -6,6 +6,7 @@ import { getProduits } from "../redux/ProduitSlice";
 import Header from "./Header";
 import Stats from "./Stats";
 
+
 export default function Accuiel() {
   let navigate = useNavigate();
   const [lc, setlc] = useState(false);
